@@ -1,0 +1,19 @@
+.simulator {
+    background: var(--background-color);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.simulator-content-division {
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.simulator-content {
+    width: 100%;
+}
+
+.ordering-area {
+    width: 50%;
+}

@@ -1,0 +1,22 @@
+.coin-info {
+    height: 50px;
+    max-width: 100%;
+    padding: 1rem 2rem;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+.about-coin-name {
+    gap: 1rem;
+    color: white;
+}
+
+.about-coin-name img{
+    width: 30px;
+}
+
+.light-color {
+    font-size: var(--xxs);
+    color: grey;
+}
+

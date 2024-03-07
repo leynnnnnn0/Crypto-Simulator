@@ -1,0 +1,52 @@
+.benefits {
+    height: 100vh;
+    width: 100%;
+    background: var(--background-color);
+}
+
+.benefits-content {
+    padding: 5rem;
+    gap: 2rem;
+    justify-content: center;
+}
+
+
+.benefits-text h1 {
+    font-family: var(--primary-font);
+    font-size: var(--xl);
+}
+
+.benefits-text p {
+    font-size: var(--xxs);
+    margin-left: 5rem;
+}
+
+.smart-way {
+    max-width: 800px;
+    border: 1px solid black;
+    padding: 1rem;
+    min-width: 200px;
+    
+}
+
+.smart-way div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.smart-way h1{
+    font-family: var(--primary-font);
+    font-size: var(--s);
+}
+
+@media (max-width: 1000px) {
+    .benefits-text p {
+        margin: 0;
+    }
+    .benefits-text {
+        flex-direction: column;
+        text-align: center;
+        
+    }
+}

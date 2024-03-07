@@ -1,0 +1,85 @@
+.about {
+    color: white;
+    padding: 5rem;
+    gap: 5rem;
+    min-height: 100vh;
+}
+
+.what-is {
+    font-family: "Goldman", sans-serif;
+    gap: 5rem;
+}
+
+.what-is h1 {
+    font-size: var(--xl);
+    color: var(--tertiary-color)
+    
+}
+
+.about-crypto101 {
+    max-width: 800px;
+    font-family: "Poppins", sans-serif;
+    font-size: var(--xxs);
+}
+
+.get-started {
+    margin-top: 1rem;
+    background: white;
+    color: var(--background-color);
+    gap: 0.3rem; 
+}
+
+.get-started:hover {
+    background: var(--tertiary-color);
+}
+
+.light-icon {
+    color: var(--tertiary-color);
+}
+
+.more-info {
+    font-family: var(--primary-font);
+}
+
+.more-info h1 {
+    font-size: var(--l);
+    color: var(--tertiary-color);
+}
+
+.more-info {
+    font-size: var(--s);
+    text-align: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.info-boxes {
+    gap: 2rem;
+    text-align: left;
+}
+
+.info-box {
+    cursor: pointer;
+    max-height: 400px;
+    max-width: 400px;
+    border: 1px solid var(--tertiary-color);
+    padding: 1rem;
+    border-radius: 10px;
+    font-family: var(--p-font);
+    font-size: var(--s);
+    transition: ease 0.5s;
+}
+
+.info-box:hover {
+    scale: 1.1;
+}
+
+@media (max-width: 1000px) {
+    .what-is {
+        display: inline;
+        text-align: center;
+    }
+    .info-boxes {
+        flex-direction: column;
+    }
+}
