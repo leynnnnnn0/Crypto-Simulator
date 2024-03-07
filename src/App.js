@@ -12,9 +12,9 @@ const App = () => {
       <About />
       <Benefits />
       <Footer/> */}
-      <Simulator/>
+      <Simulator />
     </>
-  )
+  );
 }
 
 export default App
