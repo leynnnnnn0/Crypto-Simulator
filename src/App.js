@@ -1,19 +1,17 @@
 import "./App.css"
+import HomePage from "./Pages/HomePage/HomePage";
 import Simulator from "./Pages/Simulator/Simulator"
-// import About from "./Pages/About/About"
-// import Benefits from "./Pages/Benefits/Benefits"
-// import HomePage from "./Pages/HomePage/HomePage"
-// import Footer from "./components/Footer/Footer"
+import { HashRouter, Routes, Route, BrowserRouter } from "react-router-dom";
 
 const App = () => {
   return (
-    <>
-      {/* <HomePage />
-      <About />
-      <Benefits />
-      <Footer/> */}
-      <Simulator />
-    </>
+    <HashRouter>
+      <Routes>
+        <Route index element={<HomePage />} />
+        <Route path="/home" element={<HomePage />} />
+        <Route path="/simulator" element={<Simulator/>}/>
+      </Routes>
+    </HashRouter>
   );
 }
 

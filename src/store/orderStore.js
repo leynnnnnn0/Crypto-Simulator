@@ -1,4 +1,5 @@
 import { create } from "zustand";
+import axios from "axios";
 
 export const orderStore = create(set => ({
     orderDetails: {
@@ -18,6 +19,13 @@ export const orderStore = create(set => ({
                 stopLoss
             }
         })
-        console.log(orderStore.getState().orderDetails);
+        console.log(orderStore.getState().orderDetails)
+        orderStore.getState().addOrder();
+    },
+    addOrder: async () => {
+        const { quantity, currentPrice, position, takeProfit, stopLoss } =
+          orderStore.getState().orderDetails;
+        await axios.post("http://localhost:8000/addOrder", { quantity, currentPrice, position, takeProfit, stopLoss })
+            .then(console.log("added")).catch(err => console.log(err));
     }
 }))

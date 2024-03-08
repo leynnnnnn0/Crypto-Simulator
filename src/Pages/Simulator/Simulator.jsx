@@ -7,7 +7,7 @@ import "./Simulator.css";
 const Simulator = () => {
   return (
     <div className="simulator hAndW">
-      <section className="navigation">
+      <section className="navigation-area">
         <Nav />
       </section>
       <div className="simulator-content-division flex">

@@ -9,7 +9,7 @@ const CoinInfo = () => {
   const {data, getATHandATL, currentPrice, allTimeHigh, allTimeLow} = chartDataStore();
   useEffect(() => {getATHandATL()}, [data]);
   return (
-    <div className="coin-info flexCSB">
+    <div className="coin-info flexCSB xs">
       <section className="about-coin-name flexCenter">
         <img src={logo} alt="gecko" />
         <p className="p">GECKO/USD</p>

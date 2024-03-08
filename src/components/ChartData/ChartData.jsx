@@ -18,7 +18,7 @@ const ChartData = () => {
     }, [data])
     
   return (
-    <div className="chart-data">
+    <div className="chart-data xs">
       <ResponsiveContainer width="100%" height={400}>
         <LineChart width={500} height={300} data={priceData}>
           <YAxis />

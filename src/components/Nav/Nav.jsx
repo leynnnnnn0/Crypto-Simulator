@@ -1,12 +1,13 @@
 import "./Nav.css";
 import { navData } from "./navData";
 import { Link } from "react-scroll";
+import { Link as HomeLink } from "react-router-dom";
 
 const Nav = () => {
   return (
     <div className="nav flexCSB">
       <section className="logo">
-        <span>CYPTO101</span>
+        <HomeLink to="/home">CYPTO101</HomeLink>
       </section>
       <section className="routes flex">
         {navData.map((item) => (

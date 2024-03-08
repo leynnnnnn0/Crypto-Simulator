@@ -19,8 +19,9 @@
     line-height: 3rem;
 }
 
-.simulator {
+.simulator-text {
     font-size: var(--l);
+    background: none;
 }
 
 .start-trading button{

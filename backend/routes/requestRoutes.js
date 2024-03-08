@@ -1,10 +1,11 @@
 import express from "express";
 const router = express.Router();
-import { Wallet } from "../model/walletSchema.js";
+import { Order, Wallet } from "../model/walletSchema.js";
 
 router.get("/get", async (req, res) => {
     try {
-        res.send({ message: "Hello" });
+        const result = await Wallet.find({});
+        res.send({result});
     } catch (err) {
         res.send({ message: err });
     }
@@ -20,6 +21,23 @@ router.post("/post", async (req, res) => {
         })
         newMoney.save();
         res.send({message: "added"})
+    } catch (err) {
+        console.log(err);
+    }
+})
+
+router.post("/addOrder", async (req, res) => {
+    try {
+        const { quantity, currentPrice, position, takeProfit, stopLoss } = req.body;
+        const newOrder = new Order({
+            quantity,
+            currentPrice,
+            position,
+            takeProfit,
+            stopLoss
+        })
+        newOrder.save();
+        res.send({ message: "order added" });
     } catch (err) {
         console.log(err);
     }

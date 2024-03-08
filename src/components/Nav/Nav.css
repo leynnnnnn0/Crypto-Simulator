@@ -10,14 +10,17 @@
     width: 200px;
 }
 
-.logo {
+.logo a{
     font-weight: bolder;
     font-size: var(--m);
+    color: #000;
+    text-decoration: none;
 }
 
 .routes a {
     margin: 1rem;
     color: #000;
+    font-size: var(--s);
     cursor: pointer;
 }
 

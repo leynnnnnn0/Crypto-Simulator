@@ -8,11 +8,14 @@
 }
 
 :root {
+  --simulator-primary-color: #1b1b22;
+  --simulator-secondary-color: #221e36;
   --background-color: rgb(52, 54, 57);
   --primary-font: "Goldman", sans-serif;
   --p-font: "Poppins", sans-serif;
   --secondary-color: linear-gradient(115deg, rgba(208,247,228,1) 65%, rgba(255,255,255,1) 100%);
   --tertiary-color: rgb(208,247,228);
+  --amount-color: #FFF;
   /* font sizes */
   --xl: 5rem;
   --l: 3rem;
@@ -22,8 +25,25 @@
   --xxs: 0.8rem;
 }
 
+.link {
+  text-decoration: none;
+  color: white;
+}
+
 html, body {
   height: 100vh;
+  width: 100%;
+}
+
+.BR10 {
+  border-radius: 10px;
+}
+
+.BR20 {
+  border-radius: 20px;
+}
+
+.w100 {
   width: 100%;
 }
 
@@ -61,6 +81,14 @@ html, body {
 
 .flex {
   display: flex;
+}
+
+.xsP {
+  font-size: var(--xs);
+}
+
+.xs {
+  font-size: var(--xs);
 }
 
 .flexCol {
