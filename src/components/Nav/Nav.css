@@ -1,8 +1,9 @@
 .nav {
     height: 15vh;
     width: 100%;
-    padding: 2rem 2rem;
-    font-family: "Orbitron", sans-serif;   
+    padding: 3rem 6rem;
+    font-family: "Orbitron", sans-serif; 
+    backdrop-filter: blur(5px);  
 }
 
 /* To make sure that the routes section will be in the center */
@@ -20,7 +21,7 @@
 .routes a {
     margin: 1rem;
     color: #000;
-    font-size: var(--s);
+    font-size: var(--xs);
     cursor: pointer;
 }
 

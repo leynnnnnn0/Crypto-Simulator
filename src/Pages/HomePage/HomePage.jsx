@@ -9,15 +9,16 @@ import { Link } from "react-router-dom"
 const HomePage = () => {
   return (
     <>
+      <section className="navigation">
+        <Nav />
+      </section>
       <div className="home-page hAndW pageBackground pagePadding">
         <div className="home-page-content flexCenter page">
-          <section className="navigation">
-            <Nav />
-          </section>
           <section className="home-page-text flexCol">
             <h1 className="main-text">
               CRYPTO
-              <br /><span className="simulator-text">SIMULATOR</span>
+              <br />
+              <span className="simulator-text">SIMULATOR</span>
             </h1>
             <p>
               Master crypto trading risk-free with Crypto Simulator. Practice
@@ -25,7 +26,11 @@ const HomePage = () => {
               beginners and experienced traders
             </p>
             <section className="start-trading">
-              <button className="button"><Link to="/simulator" className="link">Start trading</Link></button>
+              <button className="button">
+                <Link to="/simulator" className="link">
+                  Start trading
+                </Link>
+              </button>
             </section>
           </section>
           <section className="images">
@@ -35,7 +40,7 @@ const HomePage = () => {
       </div>
       <About />
       <Benifits />
-      <Footer/>
+      <Footer />
     </>
   );
 }
