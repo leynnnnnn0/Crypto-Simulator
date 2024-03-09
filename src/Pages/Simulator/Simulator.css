@@ -21,6 +21,10 @@
     width: 50%;
 }
 
+.order-info {
+    height: 100%;;
+}
+
 @media (max-width: 800px) {
     .simulator {
         height: fit-content;

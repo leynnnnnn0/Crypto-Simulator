@@ -14,11 +14,6 @@
   scrollbar-color: #6c757d transparent; /* Change the color to your preference */
 }
 
-.about-orders ::-webkit-scrollbar-button {
-  display: none;
-}
-
-
 
 .active {
     text-decoration: underline;
@@ -44,10 +39,6 @@
 
 .Long {
     color: aquamarine;
-}
-
-.order-table {
-    height: 100%;
 }
 
 
