@@ -5,7 +5,7 @@ export const aboutOrderStore = create((set) => ({
   orderHistory: [],
   fetchOrderHistoryData: async () => {
     try {
-      const res = await axios.get("http://localhost:8000/getHistory");
+      const res = await axios.get("https://crypto-simulator-backend.onrender.com/getHistory");
         const data = res.data;
         const orderHistory = data.map((item) => ({
           _id: item._id,
@@ -25,7 +25,7 @@ export const aboutOrderStore = create((set) => ({
     positions: [],
     fetchPositions: async () => {
         try {
-      const res = await axios.get("http://localhost:8000/getPositions");
+      const res = await axios.get("https://crypto-simulator-backend.onrender.com/getPositions");
             const data = res.data;
         const positions = data.map((item) => ({
           _id: item._id,

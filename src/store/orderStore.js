@@ -57,7 +57,9 @@ export const orderStore = create((set) => ({
     },
     closePosition: async (_id) => {
         try {
-            await axios.delete(`http://localhost:8000/closePosition/${_id}`);
+            await axios.delete(
+              `https://crypto-simulator-backend.onrender.com/closePosition/${_id}`
+            );
         } catch (err) {
             console.log(err);
       }
