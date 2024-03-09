@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { aboutOrderStore } from "../../store/aboutOrderStore";
 import { chartDataStore } from "../../store/chartDataStore";
 import { orderStore } from "../../store/orderStore";
