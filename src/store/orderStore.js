@@ -29,7 +29,7 @@ export const orderStore = create((set) => ({
     const { quantity, currentPrice, total, position, takeProfit, stopLoss } =
       orderStore.getState().orderDetails;
     await axios
-      .post("http://localhost:8000/addOrder", {
+      .post("https://crypto-simulator-backend.onrender.com/addOrder", {
         quantity,
           currentPrice,
         total,
@@ -44,7 +44,7 @@ export const orderStore = create((set) => ({
     const { quantity, currentPrice, total, position, takeProfit, stopLoss } =
       orderStore.getState().orderDetails;
     await axios
-      .post("http://localhost:8000/addPosition", {
+      .post("https://crypto-simulator-backend.onrender.com/addPosition", {
         quantity,
           currentPrice,
         total,

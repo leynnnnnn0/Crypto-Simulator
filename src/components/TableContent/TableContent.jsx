@@ -12,7 +12,9 @@ const TableContent = ({ _id, createdAt, quantity, total, entryPrice, position, t
     const { fetchPositions,positions } = aboutOrderStore();
     const handleClick = async () => {
         try {
-            const result = await axios.get(`http://localhost:8000/getPosition/${_id}`);
+            const result = await axios.get(
+              `https://crypto-simulator-backend.onrender.com/getPosition/${_id}`
+            );
             const { quantity } = result.data;
             const total = quantity * currentPrice;
             console.log(typeof walletData.balance + total);
