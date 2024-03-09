@@ -140,13 +140,38 @@ html, body {
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 700px) {
   :root {
     --xl: 2rem;
     --l: 1rem;
     --m: 2rem;
     --s: 0.8rem;
-    --xs: 0.7rem;
-    --xxs: 0.7rem;
+    --xs: 0.5rem;
+    --xxs: 0.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  :root {
+    --xl: 2rem;
+    --l: 1.3rem;
+    --m: 1rem;
+    --s: 0.7rem;
+    --xs: 0.5rem;
+    --xxs: 0.5rem;
+  }
+  .button {
+    padding: 0.3rem 1rem;
+  }
+}
+
+@media (max-width: 300px) {
+  :root {
+    --xl: 1.3rem;
+    --l: 1.3rem;
+    --m: 1rem;
+    --s: 0.7rem;
+    --xs: 0.5rem;
+    --xxs: 0.5rem;
   }
 }

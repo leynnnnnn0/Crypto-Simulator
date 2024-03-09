@@ -1,10 +1,21 @@
+import { useEffect } from "react";
+import AboutOrders from "../../components/AboutOrders/AboutOrders";
 import ChartData from "../../components/ChartData/ChartData";
 import CoinInfo from "../../components/CoinInfo/CoinInfo";
 import Nav from "../../components/Nav/Nav";
 import OrderingBox from "../../components/OrderingBox/OrderingBox";
+import { aboutOrderStore } from "../../store/aboutOrderStore";
 import "./Simulator.css";
+import { walletDataStore } from "../../store/walletDataStore";
+
 
 const Simulator = () => {
+  const { positions, orderHistory, fetchPositions } = aboutOrderStore();
+  const { fetchWalletData } = walletDataStore();
+  useEffect(() => {
+    fetchPositions();
+    fetchWalletData();
+  }, [positions, orderHistory])
   return (
     <div className="simulator hAndW">
       <section className="navigation-area">
@@ -23,6 +34,9 @@ const Simulator = () => {
           <OrderingBox/>
         </section>
       </div>
+      <section className="order-info">
+        <AboutOrders/>
+      </section>
     </div>
   );
 };

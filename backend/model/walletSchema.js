@@ -13,29 +13,65 @@ const walletSchema = mongoose.Schema({
     }
 }, { timestamps: true })
 
-const orderSchema = mongoose.Schema({
+const orderSchema = mongoose.Schema(
+  {
     quantity: {
-        type: Number,
-        required: true
+      type: Number,
+      required: true,
     },
     currentPrice: {
-        type: Number,
-        required: true
+      type: Number,
+      required: true,
+    },
+    total: {
+      type: Number,
+      required: true,
     },
     position: {
-        type: String,
-        required: true
+      type: String,
+      required: true,
     },
     takeProfit: {
-        type: Number
+      type: Number,
     },
     stopLoss: {
-        type: Number
-    }
-}, { timestamps: true })
+      type: Number,
+    },
+  },
+  { timestamps: true }
+);
+
+const positionSchema = mongoose.Schema(
+  {
+    quantity: {
+      type: Number,
+      required: true,
+    },
+    currentPrice: {
+      type: Number,
+      required: true,
+    },
+    total: {
+      type: Number,
+      required: true,
+    },
+    position: {
+      type: String,
+      required: true,
+    },
+    takeProfit: {
+      type: Number,
+    },
+    stopLoss: {
+      type: Number,
+    },
+  },
+  { timestamps: true }
+);
 
 
+const Position = mongoose.model("position", positionSchema);
 const Order = mongoose.model("order", orderSchema);
 const Wallet = mongoose.model("wallet", walletSchema);
 
-export { Wallet, Order};
+export { Wallet, Order, Position};

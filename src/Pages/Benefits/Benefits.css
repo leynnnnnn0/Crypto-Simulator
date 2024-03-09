@@ -50,3 +50,20 @@
         
     }
 }
+
+@media (max-width: 700px) {
+    .benefits-boxes {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    .benefits {
+        padding: 1rem;
+    }
+    .benefits-content {
+        border-radius: 10px;
+        padding: 1rem;
+    }
+}
+

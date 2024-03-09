@@ -35,3 +35,11 @@
     }
 }
 
+@media (max-width: 300px) {
+    .nav {
+        height: 5vh;
+        padding: 2em
+    }
+}
+
+

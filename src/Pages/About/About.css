@@ -83,3 +83,14 @@
         flex-direction: column;
     }
 }
+
+@media (max-width: 500px) {
+    .about {
+        padding: 1rem;
+        text-align: left;
+    }
+    .about p {
+        text-align: left;
+    }
+}
+

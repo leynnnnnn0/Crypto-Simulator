@@ -47,11 +47,33 @@
     }
 }
 
-@media (max-width >= 600px) {
+@media (max-width: 700px) {
     .main-text {
         line-height: 1rem;
     }
     .home-page img {
         width: 200px;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-text {
+        line-height: 1rem;
+    }
+    .home-page img {
+        width: 170px;
+    }
+}
+
+@media (max-width: 500px) {
+    .home-page {
+        padding: 1rem;
+    }
+    .home-page-content {
+        border-radius: 5px;
+        text-align: center;
+    }
+    .home-page img {
+        display: none;
     }
 }

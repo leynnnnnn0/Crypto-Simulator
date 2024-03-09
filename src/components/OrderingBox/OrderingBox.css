@@ -1,7 +1,7 @@
 .ordering-box {
     background: radial-gradient(circle, rgba(29,29,36,1) 64%, rgba(38,34,60,1) 100%);
     max-height: 100%;
-    max-width: 100%;
+    width: 100%;
     padding: 1rem;
     font-family: "Poppins", sans-serif;
 }
@@ -91,6 +91,20 @@
 
 .place-order button:hover {
     scale: 1.1;
+}
+
+.green {
+  color: aquamarine;
+
+}
+
+.red {
+  color: red;
+
+}
+
+.order-table {
+    overflow: auto;
 }
 
 
