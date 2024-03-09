@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Crypto-Simulator/static/css/main.fada68e3.css",
-    "main.js": "/Crypto-Simulator/static/js/main.f64a148e.js",
+    "main.js": "/Crypto-Simulator/static/js/main.6b32fd7c.js",
     "static/media/coinsAndwalletImage.png": "/Crypto-Simulator/static/media/coinsAndwalletImage.abe696182bcfae2d5859.png",
     "static/media/gecko.webp": "/Crypto-Simulator/static/media/gecko.f057b0410749ac0ebddc.webp",
     "index.html": "/Crypto-Simulator/index.html",
     "main.fada68e3.css.map": "/Crypto-Simulator/static/css/main.fada68e3.css.map",
-    "main.f64a148e.js.map": "/Crypto-Simulator/static/js/main.f64a148e.js.map"
+    "main.6b32fd7c.js.map": "/Crypto-Simulator/static/js/main.6b32fd7c.js.map"
   },
   "entrypoints": [
     "static/css/main.fada68e3.css",
-    "static/js/main.f64a148e.js"
+    "static/js/main.6b32fd7c.js"
   ]
 }
