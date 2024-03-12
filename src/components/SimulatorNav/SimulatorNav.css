@@ -1,0 +1,16 @@
+.simulator-nav {
+    height: 10vh;
+    background: var(--simulator-primary-color);
+    border-bottom: 1px solid grey;
+    padding: 1rem 3rem;
+    cursor: pointer;
+}
+
+
+.simulator-nav a {
+    font-family: var(--primary-font);
+    color: #fff;
+    font-size: var(--s);
+    text-decoration: none;
+
+}

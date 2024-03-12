@@ -8,8 +8,8 @@ const TableContent = ({ _id, createdAt, quantity, total, entryPrice, position, t
     const { closePosition } = orderStore(); 
     const { walletData, updateBalance } = walletDataStore();
     const { currentPrice } = chartDataStore();
-    const { fetchPositions,positions } = aboutOrderStore();
-    const handleClick = async () => {
+    const { fetchPositions } = aboutOrderStore();
+  const handleClick = async () => {
         try {
             const result = await axios.get(
               `https://crypto-simulator-backend.onrender.com/getPosition/${_id}`

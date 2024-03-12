@@ -7,6 +7,7 @@ import OrderingBox from "../../components/OrderingBox/OrderingBox";
 import { aboutOrderStore } from "../../store/aboutOrderStore";
 import "./Simulator.css";
 import { walletDataStore } from "../../store/walletDataStore";
+import SimulatorNav from "../../components/SimulatorNav/SimulatorNav";
 
 
 const Simulator = () => {
@@ -19,7 +20,7 @@ const Simulator = () => {
   return (
     <div className="simulator hAndW">
       <section className="navigation-area">
-        <Nav />
+        <SimulatorNav/>
       </section>
       <div className="simulator-content-division flex">
         <div className="simulator-content">
